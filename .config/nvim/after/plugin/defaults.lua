@@ -177,6 +177,7 @@ local rt_opts = {
             vim.keymap.set("n", "K", require("rust-tools").hover_actions.hover_actions, { buffer = bufnr })
             -- Code action groups
             vim.keymap.set("n", "<Leader>ca", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
+            vim.keymap.set("v", "<Leader>ca", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
             vim.keymap.set("n", '<leader>rn', vim.lsp.buf.rename, { buffer = bufnr})
             vim.keymap.set("n", '<C-k>', vim.lsp.buf.signature_help, { buffer = bufnr})
         end,
