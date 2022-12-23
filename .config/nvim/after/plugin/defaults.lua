@@ -4,9 +4,10 @@ vim.keymap.set({'n', 'x'}, 'x', '"_x')
 
 vim.opt.colorcolumn = "80"
 
-local opts = {buffer = 0}
-vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
-vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+local optss = {buffer = 0}
+vim.keymap.set('t', '<esc>', [[<C-\><C-n><C-w>]])
+vim.keymap.set('t', 'jk', [[<C-\><C-n>]])
+vim.keymap.set('n', '<leader>tt', ':ToggleTerm<CR>')
 
 local extension_path = vim.env.HOME
 .. "/.vscode/extensions/vadimcn.vscode-lldb-1.8.1/"
@@ -313,3 +314,5 @@ require('copilot').setup({
 })
 
 vim.cmd [[set winbar=%=%m\ %f]]
+
+require("autoclose").setup({})

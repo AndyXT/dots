@@ -32,4 +32,6 @@ return function(use)
 			require("toggleterm").setup()
 		end,
 	})
+	use({'m4xshen/autoclose.nvim',
+	})
 end
