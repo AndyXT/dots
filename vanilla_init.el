@@ -31,7 +31,7 @@
 	 "* TODO %<%Y%m%d%H%M%S> %^{Task Name}\n- %?\n %i\n %a")
 	("j" "Journal" entry (file+olp+datetree (lambda()
 					   (expand-file-name
-					    (format-time-string "%Y-%m-%d-journal.org")
+					    (format-time-string "%Y-%m-journal.org")
 					    org-directory)))
          "* %?\nEntered on %U\n  %i\n  %a")))
 (add-to-list 'org-capture-templates
