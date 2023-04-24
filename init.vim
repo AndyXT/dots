@@ -41,6 +41,7 @@ call plug#begin()
 	Plug 'liuchengxu/vim-which-key'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
 call plug#end()
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
